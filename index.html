@@ -97,13 +97,25 @@
     footer h2, footer a {
       color: white;
     }
+
+    /* Feedback button style */
+    .feedback-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
 
   <!-- 🎬 Video Background -->
   <video autoplay muted loop playsinline id="bg-video">
-    <source src="C:/Users/Sangeeth Kumar/OneDrive/MOOD/beat.mp4"
+    <source src="C:/Users/Sangeeth Kumar/OneDrive/MOOD/beat.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
@@ -168,6 +180,14 @@
     </h2>
     <h2>Contact us:
       <a href="https://www.instagram.com/urstruly._.szngeeth/" target="_blank">INSTAGRAM</a>
+    </h2>
+
+    <!-- 💬 Feedback Button -->
+    <h2>Feedback:
+      <button class="feedback-button"
+        onclick="location.href='mailto:sangeethvardhanapu28@gmail.com?subject=Feedback&body=Hi Sangeeth, I wanted to share this feedback...';">
+        Send Feedback
+      </button>
     </h2>
   </footer>
 
